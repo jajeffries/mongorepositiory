@@ -39,8 +39,15 @@ catRepository.find(query, function(results){
 cat.age = 4;
 catRepository.update(query, cat);
 
+cat.age = 5;
+catRepository.update(query, cat, function () {
+	console.log("Updated ", cat);
+});
+
 //delete cat
 catRepository.remove(query,function(){
 	console.log("Removed ",cat);
 });
+
+catRepository.remove(query);
 ```
