@@ -1,25 +1,29 @@
 {
-	"name": "mongorepository",
-	"description": "Generic implementation of the repository pattern for nodejs/mongodb",
-	"keywords": ["mongodb"],
-	"author": "IainJMitchell",
-	"version": "1.1.1",
-  "repository" : { 
-    "type" : "git", 
-    "url" : "http://github.com/iainjmitchell/mongorepository"
-    },
-	"licenses": [{
-  	"type": "MIT"
-	}],
-	"directories": {
-  	"lib": "./lib"
-	},
-	"main":  "./lib/repository.js",
-	"dependencies": {
-		"mongojs":">=0.3.1"
-	},
-  "devDependencies":{
-     "mocha": "*",
-     "chai" : "*"
+  "name": "mongorepository",
+  "description": "Generic implementation of the repository pattern for nodejs/mongodb",
+  "keywords": [
+    "mongodb"
+  ],
+  "author": "IainJMitchell",
+  "version": "1.1.1",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/iainjmitchell/mongorepository"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "directories": {
+    "lib": "./lib"
+  },
+  "main": "./lib/repository.js",
+  "dependencies": {
+    "mongodb": "*"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*"
   }
 }

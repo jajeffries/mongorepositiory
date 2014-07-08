@@ -5,7 +5,7 @@ task :ruby_dependencies do
 end
 
 task :node_dependencies do
-	sh 'npm update'
+	sh 'sudo npm update'
 end
 
 task :git => :ruby_dependencies do 
@@ -21,5 +21,5 @@ task :git => :ruby_dependencies do
 end
 
 task :test do
-	sh 'mocha ./test  --recursive --reporter nyan'	
+	sh 'mocha ./test --recursive --reporter spec --timeout 60000'	
 end
