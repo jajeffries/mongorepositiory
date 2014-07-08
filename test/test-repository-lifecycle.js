@@ -57,6 +57,13 @@ describe('When we want to keep track of cats', function(){
 					});
 				});
 
+
+
+				it('Then I can update the cat', function (done) {
+					mongoRepository.update({name: 'TomCat'}, {colour: 'black'});
+					done();
+				});
+
 				describe('And I remove tom cat', function(){
 					describe('And I try to find tom cat', function(){
 						it('Then no cats are returned :(', function(done){
@@ -134,4 +141,6 @@ describe('When we want to keep track of cats', function(){
 			mongoRepository.remove({});
 		});
 	});
+
+
 });
